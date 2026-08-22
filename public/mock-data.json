@@ -1,0 +1,789 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "emilys",
+      "name": "Emily Smith",
+      "email": "emily.smith@sprintdesk.io",
+      "avatar": "https://dummyjson.com/icon/emilys/128",
+      "role": "Tech Lead"
+    },
+    {
+      "id": "u2",
+      "username": "michaelw",
+      "name": "Michael Williams",
+      "email": "michael.w@sprintdesk.io",
+      "avatar": "https://dummyjson.com/icon/michaelw/128",
+      "role": "Frontend Engineer"
+    },
+    {
+      "id": "u3",
+      "username": "sophieb",
+      "name": "Sophie Brown",
+      "email": "sophie.b@sprintdesk.io",
+      "avatar": "https://dummyjson.com/icon/sophieb/128",
+      "role": "Backend Engineer"
+    },
+    {
+      "id": "u4",
+      "username": "alexj",
+      "name": "Alex Johnson",
+      "email": "alex.j@sprintdesk.io",
+      "avatar": "https://dummyjson.com/icon/alexj/128",
+      "role": "Product Designer"
+    },
+    {
+      "id": "u5",
+      "username": "davidl",
+      "name": "David Lee",
+      "email": "david.l@sprintdesk.io",
+      "avatar": "https://dummyjson.com/icon/davidl/128",
+      "role": "QA Engineer"
+    }
+  ],
+  "sprints": [
+    {
+      "id": "s1",
+      "name": "Sprint 21",
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-14",
+      "status": "completed",
+      "velocity": 24
+    },
+    {
+      "id": "s2",
+      "name": "Sprint 22",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-28",
+      "status": "completed",
+      "velocity": 28
+    },
+    {
+      "id": "s3",
+      "name": "Sprint 23",
+      "startDate": "2026-07-29",
+      "endDate": "2026-08-11",
+      "status": "completed",
+      "velocity": 31
+    },
+    {
+      "id": "s4",
+      "name": "Sprint 24 (Active)",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-25",
+      "status": "active",
+      "velocity": 30
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-101",
+      "title": "Implement OAuth2 & Refresh Token Rotation",
+      "description": "Configure silent token refresh interceptors with automatic retry queuing on 401 Unauthorized responses.",
+      "status": "in_progress",
+      "priority": "urgent",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-23",
+      "createdAt": "2026-08-12T09:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Security",
+        "Auth",
+        "Core"
+      ],
+      "comments": [
+        {
+          "id": "c1",
+          "author": "Michael Williams",
+          "avatar": "https://dummyjson.com/icon/michaelw/128",
+          "text": "Axios interceptor scaffolded, testing token retry queue.",
+          "createdAt": "2026-08-14T11:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TASK-102",
+      "title": "Design & Build Accessible Kanban Drag-and-Drop",
+      "description": "Utilize @dnd-kit/core with keyboard sensors, collision detection, and optimistic UI transitions.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-12T10:15:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 8,
+      "tags": [
+        "UI/UX",
+        "DnD",
+        "Kanban"
+      ],
+      "comments": [
+        {
+          "id": "c2",
+          "author": "Alex Johnson",
+          "avatar": "https://dummyjson.com/icon/alexj/128",
+          "text": "Added hover focus states and smooth drop animation.",
+          "createdAt": "2026-08-16T14:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TASK-103",
+      "title": "Recharts Velocity & Distribution Visualizations",
+      "description": "Construct interactive sprint velocity bar charts and task status donut charts with responsive breakpoints.",
+      "status": "review",
+      "priority": "medium",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-25",
+      "createdAt": "2026-08-13T08:45:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Analytics",
+        "Charts"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-104",
+      "title": "Configure Real-Time Background Notification Polling",
+      "description": "Poll endpoint with page visibility detection to pause background execution and trigger Toast cues.",
+      "status": "done",
+      "priority": "high",
+      "assignee": {
+        "id": "u3",
+        "name": "Sophie Brown",
+        "avatar": "https://dummyjson.com/icon/sophieb/128",
+        "role": "Backend Engineer"
+      },
+      "dueDate": "2026-08-20",
+      "createdAt": "2026-08-13T11:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Polling",
+        "Notifications"
+      ],
+      "comments": [
+        {
+          "id": "c3",
+          "author": "David Lee",
+          "avatar": "https://dummyjson.com/icon/davidl/128",
+          "text": "Verified tab hidden pause behavior, works cleanly.",
+          "createdAt": "2026-08-19T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TASK-105",
+      "title": "Build Headless Modal & Drawer Primitives",
+      "description": "Accessible dialogs with focus trapping, escape key dismiss, and backdrop blur transitions.",
+      "status": "done",
+      "priority": "medium",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-18",
+      "createdAt": "2026-08-12T13:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Design System",
+        "Accessibility"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-106",
+      "title": "Lighthouse Performance & Code-Splitting Audit",
+      "description": "Ensure lazy loading for all primary routes (/dashboard, /board, /analytics) and maintain >90 scores.",
+      "status": "backlog",
+      "priority": "medium",
+      "assignee": {
+        "id": "u5",
+        "name": "David Lee",
+        "avatar": "https://dummyjson.com/icon/davidl/128",
+        "role": "QA Engineer"
+      },
+      "dueDate": "2026-08-26",
+      "createdAt": "2026-08-14T09:10:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Performance",
+        "Audit"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-107",
+      "title": "Dark Mode CSS Variables & Theme Store",
+      "description": "Persisted color theme switching with custom CSS tokens and seamless transition support.",
+      "status": "done",
+      "priority": "low",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-19",
+      "createdAt": "2026-08-12T15:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Theming",
+        "Design System"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-108",
+      "title": "Setup Vitest Unit Test Suite for Board and Interceptors",
+      "description": "Cover store task mutations (add, move, delete, undo) and mock axios refresh flow.",
+      "status": "review",
+      "priority": "high",
+      "assignee": {
+        "id": "u5",
+        "name": "David Lee",
+        "avatar": "https://dummyjson.com/icon/davidl/128",
+        "role": "QA Engineer"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-15T14:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Testing",
+        "Vitest"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-109",
+      "title": "Refactor DataTable Component with Sorting and Filter",
+      "description": "Generic TypeScript DataTable component supporting column sorting, search query, and pagination.",
+      "status": "backlog",
+      "priority": "medium",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-27",
+      "createdAt": "2026-08-16T10:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Components",
+        "DataTable"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-110",
+      "title": "Integrate Remember Me with Simulated Persistence",
+      "description": "Store hashed user session token with 30-day expiry calculation in storage layer.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-28",
+      "createdAt": "2026-08-16T11:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Auth",
+        "Bonus"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-111",
+      "title": "Optimize Bundle Size with Dynamic Asset Imports",
+      "description": "Analyze rollup chunks and decouple charting library from critical entry bundle.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-29",
+      "createdAt": "2026-08-17T09:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Optimization"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-112",
+      "title": "Implement Global Toast Manager with Auto-Dismiss",
+      "description": "Provide useToast hook for dispatching success, error, warning, and info notifications.",
+      "status": "done",
+      "priority": "medium",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-17",
+      "createdAt": "2026-08-13T16:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Design System",
+        "Toast"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-113",
+      "title": "Add Task Search & Multi-Criteria Filtering",
+      "description": "Support instant client-side filtering by priority, assignee, and text query on Kanban board.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-17T11:15:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Kanban",
+        "Filter"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-114",
+      "title": "Export Analytics Dashboard to PNG",
+      "description": "Implement client-side canvas rasterization to download executive chart summary reports.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-30",
+      "createdAt": "2026-08-17T14:40:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Analytics",
+        "Bonus"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-115",
+      "title": "Simulate Token Expiry & Refresh Interceptor Recovery",
+      "description": "Provide a testing toggle to simulate expired access tokens and verify seamless background refresh.",
+      "status": "review",
+      "priority": "urgent",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-23",
+      "createdAt": "2026-08-18T08:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Auth",
+        "Testing"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-116",
+      "title": "Interactive Story Point Burndown Curve",
+      "description": "Render expected burndown vs actual story point completion trajectory across active sprint.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignee": {
+        "id": "u3",
+        "name": "Sophie Brown",
+        "avatar": "https://dummyjson.com/icon/sophieb/128",
+        "role": "Backend Engineer"
+      },
+      "dueDate": "2026-08-25",
+      "createdAt": "2026-08-18T10:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Analytics",
+        "Charts"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-117",
+      "title": "Implement Board Drag-and-Drop Undo Mechanism",
+      "description": "Allow user to undo last task drag action with convenient toast action snackbar.",
+      "status": "done",
+      "priority": "medium",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-21",
+      "createdAt": "2026-08-18T13:20:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Kanban",
+        "Bonus"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-118",
+      "title": "Create Accessible Modal Confirmation Dialog",
+      "description": "Ensure dangerous actions like task deletion trigger accessible confirmation with auto-focus.",
+      "status": "done",
+      "priority": "high",
+      "assignee": {
+        "id": "u5",
+        "name": "David Lee",
+        "avatar": "https://dummyjson.com/icon/davidl/128",
+        "role": "QA Engineer"
+      },
+      "dueDate": "2026-08-20",
+      "createdAt": "2026-08-18T15:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "UX",
+        "Accessibility"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-119",
+      "title": "Implement Password Strength Meter on Login",
+      "description": "Live entropy evaluation and visual security indicator for password input field.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-28",
+      "createdAt": "2026-08-19T09:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Auth",
+        "Bonus"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-120",
+      "title": "Add Task Commenting and Activity Thread",
+      "description": "Allow team members to post comments with timestamps and display user avatars in task drawer.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignee": {
+        "id": "u3",
+        "name": "Sophie Brown",
+        "avatar": "https://dummyjson.com/icon/sophieb/128",
+        "role": "Backend Engineer"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-19T11:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Kanban",
+        "Comments"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-121",
+      "title": "Implement Quick Task Creation Modal & Hotkey",
+      "description": "Global shortcut C or board button to quickly create new task with title, assignee, and priority.",
+      "status": "review",
+      "priority": "high",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-23",
+      "createdAt": "2026-08-19T14:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Kanban",
+        "UX"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-122",
+      "title": "Build Executive Sprint Summary Dashboard Card",
+      "description": "High-level overview cards displaying active tasks, total story points, blocker count, and team members.",
+      "status": "done",
+      "priority": "medium",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-21",
+      "createdAt": "2026-08-20T08:45:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Dashboard",
+        "UI"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-123",
+      "title": "Validate Responsive Breakpoints for Tablet & Mobile (375px)",
+      "description": "Ensure horizontal scrolling for Kanban columns and collapsible sidebar for mobile screens.",
+      "status": "review",
+      "priority": "urgent",
+      "assignee": {
+        "id": "u5",
+        "name": "David Lee",
+        "avatar": "https://dummyjson.com/icon/davidl/128",
+        "role": "QA Engineer"
+      },
+      "dueDate": "2026-08-23",
+      "createdAt": "2026-08-20T10:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Responsive",
+        "Mobile"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-124",
+      "title": "Setup Notification Pagination and Badge Counter",
+      "description": "Paginate notifications list when exceeding 20 items and maintain live unread count badge.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignee": {
+        "id": "u3",
+        "name": "Sophie Brown",
+        "avatar": "https://dummyjson.com/icon/sophieb/128",
+        "role": "Backend Engineer"
+      },
+      "dueDate": "2026-08-25",
+      "createdAt": "2026-08-20T13:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Notifications"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-125",
+      "title": "Implement Skeleton Loaders for Data Fetching States",
+      "description": "Smooth shimmer loaders for Kanban columns, dashboard cards, and analytics charts.",
+      "status": "done",
+      "priority": "low",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-21",
+      "createdAt": "2026-08-20T15:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Design System",
+        "UX"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-126",
+      "title": "Add Story Points Aggregation per Column",
+      "description": "Compute and display total story points in column headers beside task counts.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u2",
+        "name": "Michael Williams",
+        "avatar": "https://dummyjson.com/icon/michaelw/128",
+        "role": "Frontend Engineer"
+      },
+      "dueDate": "2026-08-27",
+      "createdAt": "2026-08-21T09:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 1,
+      "tags": [
+        "Kanban"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-127",
+      "title": "Implement Task Due Date Warning Indicators",
+      "description": "Highlight overdue tasks in red and tasks due within 24 hours in amber badges.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignee": {
+        "id": "u5",
+        "name": "David Lee",
+        "avatar": "https://dummyjson.com/icon/davidl/128",
+        "role": "QA Engineer"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-21T11:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 2,
+      "tags": [
+        "Kanban",
+        "UX"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-128",
+      "title": "Add Date Range Filter to Velocity Analytics",
+      "description": "Allow users to filter sprint metrics by 1 month, 3 months, or full historical data.",
+      "status": "backlog",
+      "priority": "low",
+      "assignee": {
+        "id": "u3",
+        "name": "Sophie Brown",
+        "avatar": "https://dummyjson.com/icon/sophieb/128",
+        "role": "Backend Engineer"
+      },
+      "dueDate": "2026-08-29",
+      "createdAt": "2026-08-21T13:30:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Analytics",
+        "Bonus"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-129",
+      "title": "Configure ARIA Live Regions for Kanban Status Updates",
+      "description": "Announce column move actions to screen readers via aria-live assertive regions.",
+      "status": "review",
+      "priority": "high",
+      "assignee": {
+        "id": "u4",
+        "name": "Alex Johnson",
+        "avatar": "https://dummyjson.com/icon/alexj/128",
+        "role": "Product Designer"
+      },
+      "dueDate": "2026-08-23",
+      "createdAt": "2026-08-21T15:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 3,
+      "tags": [
+        "Accessibility",
+        "ARIA"
+      ],
+      "comments": []
+    },
+    {
+      "id": "TASK-130",
+      "title": "Implement Full Keyboard Navigation for Board Cards",
+      "description": "Allow moving tasks between columns using Space/Enter grab and Arrow key placement.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignee": {
+        "id": "u1",
+        "name": "Emily Smith",
+        "avatar": "https://dummyjson.com/icon/emilys/128",
+        "role": "Tech Lead"
+      },
+      "dueDate": "2026-08-24",
+      "createdAt": "2026-08-22T08:00:00Z",
+      "sprint": "Sprint 24",
+      "storyPoints": 5,
+      "tags": [
+        "Accessibility",
+        "DnD"
+      ],
+      "comments": []
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "Task Assigned",
+      "message": "Emily Smith assigned you to TASK-101: OAuth2 & Token Rotation",
+      "timestamp": "2026-08-22T09:15:00Z",
+      "read": false,
+      "type": "assignment"
+    },
+    {
+      "id": "notif-2",
+      "title": "Sprint 24 Active",
+      "message": "Sprint 24 has started with 30 tasks scheduled.",
+      "timestamp": "2026-08-22T08:00:00Z",
+      "read": true,
+      "type": "system"
+    },
+    {
+      "id": "notif-3",
+      "title": "Comment Added",
+      "message": "Alex Johnson commented on TASK-102: Added hover focus states.",
+      "timestamp": "2026-08-21T16:30:00Z",
+      "read": false,
+      "type": "comment"
+    }
+  ]
+}
