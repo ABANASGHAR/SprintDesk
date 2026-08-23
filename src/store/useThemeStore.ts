@@ -1,4 +1,4 @@
-﻿import { create } from 'zustand';
+import { create } from 'zustand';
 
 type Theme = 'light' | 'dark';
 
@@ -10,15 +10,25 @@ interface ThemeState {
 
 const getInitialTheme = (): Theme => {
   try {
+    let initialTheme: Theme = 'light';
     const stored = localStorage.getItem('sprintdesk_theme');
-    if (stored === 'light' || stored === 'dark') return stored;
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
+    if (stored === 'light' || stored === 'dark') {
+      initialTheme = stored;
+    } else if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      initialTheme = 'dark';
     }
+
+    if (typeof document !== 'undefined') {
+      if (initialTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+    return initialTheme;
   } catch {
-    // ignore
+    return 'light';
   }
-  return 'light';
 };
 
 export const useThemeStore = create<ThemeState>((set) => ({

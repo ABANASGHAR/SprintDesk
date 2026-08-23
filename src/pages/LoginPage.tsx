@@ -5,11 +5,13 @@ import { authApi } from '../api/authApi';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { useToast } from '../hooks/useToast';
-import { Lock, User as UserIcon, Sparkles } from 'lucide-react';
+import { Lock, User as UserIcon, Sparkles, Moon, Sun } from 'lucide-react';
+import { useThemeStore } from '../store/useThemeStore';
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const { setSession } = useAuthStore();
+  const { theme, toggleTheme } = useThemeStore();
   const { showToast } = useToast();
 
   const [username, setUsername] = useState('emilys');
@@ -66,7 +68,17 @@ export const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 sm:p-6 lg:p-8 relative">
+      <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+        <button
+          onClick={toggleTheme}
+          className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white shadow-xs transition-colors cursor-pointer"
+          aria-label="Toggle theme"
+        >
+          {theme === 'dark' ? <Sun className="h-5 w-5 text-amber-400" /> : <Moon className="h-5 w-5 text-slate-700" />}
+        </button>
+      </div>
+
       <div className="w-full max-w-md space-y-8 bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl">
         <div className="text-center space-y-2">
           <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-500/30">
